@@ -25,7 +25,10 @@
 
 
 ## References
-[Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf)
+[Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
+
 [Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
+
 [Sim Swap](https://github.com/neuralchen/SimSwap)
+
 [Pytorch Template](https://github.com/victoresque/pytorch-template)
