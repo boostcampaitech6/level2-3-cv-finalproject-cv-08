@@ -48,7 +48,7 @@
 ***열정과 도전 정신으로, 우리는 항상 앞으로 나아가고 있습니다 !***
 ### 👥 팀원 
 팀원들 깃헙
-| [신호준](깃) | [김태양](깃) | [김혜지](깃) | [정소윤](깃) | [성주희](깃) | [임서현](깃) |
+| [신호준](https://github.com/internationalwe) | [김태양](https://github.com/taeyang916) | [김혜지](https://github.com/carboxaminoo) | [정소윤](https://github.com/soyoonjeong) | [성주희](https://github.com/jouhy) | [임서현](https://github.com/dlatjgus0612) |
 |--|--|--|--|--|--|
 |![hojun](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/a1ee6720-efaa-4c8a-bbaa-af5ac3cb0df6)|![taeyang](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/e300980a-b7e7-4d3d-96d6-680804a1554d)|![hyeji (1)](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/7392ccf4-afc4-4936-8003-621f277ec158)|![soyoon](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/223e0b57-bf61-4035-bf98-0712cb7f3dd0)|![juhy (1)](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/f90e6806-2048-4321-8bc2-b088e4a6aaf2)|![seohyun (1)](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/21e2dcd9-c982-4695-a640-0770da6694bf)|
 
