@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+  node:
+   image: prom/node-exporter
+   container_name: node-exporter
+   ports:
+     - 9100:9100
+   networks:
+     - promnet
+  dcgm:
+    image : nvcr.io/nvidia/k8s/dcgm-exporter:3.2.6-3.1.9-ubuntu20.04
+    container_name : dcgm-exporter
+    ports:
+      - 9400:9400
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+    networks:
+      - promnet
+networks:
+  promnet:
+    driver: bridge
