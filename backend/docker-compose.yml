@@ -1,0 +1,77 @@
+version: '3'
+services:
+  frontend:
+    container_name: frontend
+    image: "makezenerator/frontend:latest"
+    environment:
+      NODE_ENV: production
+    ports:
+     - 3000:3000
+    command: pm2-runtime start ./build/index.js --env production 
+  
+  backend:
+    restart: unless-stopped
+    container_name: backend
+    image: "makezenerator/backend:latest"
+    ports:
+      - 5050:5050
+    env_file:
+      .env.prod
+    environment:
+      FLASK_DEBUG: 1 #리로딩 설정
+    command: gunicorn -w 1 -b 0.0.0.0:5050 app:app --reload
+
+  rabbitmq:
+    container_name: rabbitmq
+    hostname: rabbit
+    image: "rabbitmq:3-management"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=mypass
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  simple_worker:
+    container_name: simple_worker
+    image: "makezenerator/simple_worker"
+    env_file:
+      .env.prod
+    depends_on:
+      - rabbitmq
+      - backend
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./conf/makezenerator.com.conf:/etc/nginx/conf.d/makezenerator.com.conf
+      - ./conf/api.makezenerator.com.conf:/etc/nginx/conf.d/api.makezenerator.com.conf
+    ports:
+      - 80:80
+      - 443:443
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    container_name: certbot
+    image: certbot/certbot
+    restart: unless-stopped
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+  node:
+   image: prom/node-exporter
+   container_name: node-exporter
+   ports:
+     - 9100:9100
+   networks:
+     - promnet
+networks:
+  promnet:
+    driver: bridge

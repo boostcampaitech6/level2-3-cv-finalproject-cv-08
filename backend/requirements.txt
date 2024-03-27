@@ -1,0 +1,19 @@
+flask
+flask_restx
+boto3
+awscli
+Werkzeug
+PyJWT
+flask_migrate
+# celery
+pymysql
+Flask-SQLAlchemy
+SQLAlchemy
+gunicorn
+flask_cors
+# prometheus_flask_exporter
+python-dotenv
+cryptography
+celery[redis]
+minio
+pydub
