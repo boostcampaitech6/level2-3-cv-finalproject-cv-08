@@ -1,6 +1,6 @@
 
 
-# 🔊목소리로 가상 얼굴 생성 서비스 [너의목소리가보여]
+# 🔊목소리로 가상 얼굴 생성 서비스 [너의 목소리가 보여]
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> 
  <img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"> 
  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
@@ -17,6 +17,7 @@
  <img src="https://img.shields.io/badge/amazonrds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white">
  <img src="https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white">
  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=Linux&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
  
 # ✅ Project Overview
 <p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/73b51b54-e7af-4268-a7e5-84458ecc3056" style="max-width: 100%; height: auto;"></p>
