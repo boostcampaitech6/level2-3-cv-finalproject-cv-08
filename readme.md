@@ -1,6 +1,6 @@
 
 
-# 🔊목소리로 가상 얼굴 생성 서비스 [너의목소리가보여]
+# 🔊목소리로 가상 얼굴 생성 서비스 [너의 목소리가 보여]
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> 
  <img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"> 
  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
@@ -17,6 +17,7 @@
  <img src="https://img.shields.io/badge/amazonrds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white">
  <img src="https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white">
  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=Linux&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
  
 # ✅ Project Overview
 <p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/73b51b54-e7af-4268-a7e5-84458ecc3056" style="max-width: 100%; height: auto;"></p>
@@ -43,7 +44,16 @@
 ###  ✔️ 기대효과
 <p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/dc734e1a-4867-4e28-b266-76daf1241c85" style="max-width: 100%; height: auto;"></p>
 
-### ✔️ 차별점 
+### ✔️ 차별점
+⭐ 성장과 공유, 그리고 **함께**
+- 각자가 학습한 내용을 팀 내에 발표를 통해 공유하여 `함께 성장`하기
+- 캠퍼 모두와 함께 성장하기
+    - `MLOps` 에 대해 팀원들과 공부한 내용을 정리하고 외부 세션에서 그 내용을 공유하기
+    - `부캠 논문 읽기 모임 세션`(aka 부논모)을 운영
+- 팀원 간의 친목 도모 및 개발 효율 극대화하기
+    - 매주 1회 이상 오프라인 회의 및 `모각코` 진행
+    - `Workcation` 2회 진행
+
 ⭐ **도파민(중독)** 개발
 - 최종 프로젝트를 구현하기 위해 `애자일하게 문제를 접근` 하여 **Bottom Up** 방식으로 개발할 부분을 정리하여 단계적으로 서비스를 고도화 해나갈 수 있도록 하였습니다.
 - 모든 프로젝트에 사용했던 코드를 **`모듈화`** 을 통해 재사용 가능하도록 하였으며, 이를 활용하여 서비스 고도화 작업을 이뤄나갔습니다.
@@ -64,7 +74,7 @@
 |<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/internationalwe)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/taeyang916)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/carboxaminoo)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/soyoonjeong)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/jouhy)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/dlatjgus0612)</p>|
 
 ### 👥 역할 
-<p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/76814748/a58cba6a-916b-44a3-9e63-f6b797ea28d2" style="max-width: 100%; height: auto;"></p>
+<p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/f2bb09f6-53d8-46f9-9728-d271778bdd1d" style="max-width: 100%; height: auto;"></p>
 
 # ✅ 타임라인 
 팀 구성, 방향성을 설정하고 프로젝트를 설계하였습니다. 이후 `서비스 파이프라인`을 설계,  `sprint 주기`에 맞춰 회의를 진행하고, `기능명세서`를 작성하여 `task`를 진행하였습니다.
