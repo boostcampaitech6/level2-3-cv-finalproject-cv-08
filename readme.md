@@ -64,7 +64,7 @@
 |<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/internationalwe)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/taeyang916)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/carboxaminoo)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/soyoonjeong)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/jouhy)</p>|<p align='center'>[<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">](https://github.com/dlatjgus0612)</p>|
 
 ### 👥 역할 
-<p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/46400961/f2bb09f6-53d8-46f9-9728-d271778bdd1d" style="max-width: 100%; height: auto;"></p>
+<p align="center"><img src="https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/assets/76814748/a58cba6a-916b-44a3-9e63-f6b797ea28d2" style="max-width: 100%; height: auto;"></p>
 
 # ✅ 타임라인 
 팀 구성, 방향성을 설정하고 프로젝트를 설계하였습니다. 이후 `서비스 파이프라인`을 설계,  `sprint 주기`에 맞춰 회의를 진행하고, `기능명세서`를 작성하여 `task`를 진행하였습니다.
