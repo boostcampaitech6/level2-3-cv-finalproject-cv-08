@@ -7,7 +7,14 @@ class Download:
     '''
     파일을 변환하기 위해선 ffmpeg란 프로그램을 별도로 설치해 컴퓨터 환경변수 설정을 마쳐야 함.
     '''
+
     def __init__(self, link):
+        '''
+        Download 클래스의 생성자입니다.
+        
+        Args:
+            link (str): 유튜브 영상의 링크.
+        '''
         # link 인자는 GUI에서 입력된 값을 받을 때 사용
         # 컴퓨터 이용자명을 받아서 다운로드 폴더를 기본 폴더로 지정
         self.parent_dir = f"/Users/{getuser()}/Documents/voice2face-data/code/file"
@@ -15,11 +22,23 @@ class Download:
 
     def getVideoName(self):
         '''(GUI 버전) 비디오 이름을 내보내는 함수'''
+        '''
+        유튜브 비디오의 제목을 반환하는 함수입니다.
+        
+        Returns:
+            str: 비디오의 제목.
+        '''
         name = self.yt.title
         return name
 
     def downloadMp3(self):
         '''mp3 파일로 다운로드하는 함수'''
+        '''
+        mp3 형식으로 비디오를 다운로드하는 함수입니다.
+        
+        Returns:
+            str: 다운로드한 mp3 파일의 이름.
+        '''
         # mp4 형태지만 영상 없이 소리만 있는 파일 다운로드
         stream = self.yt.streams.filter(only_audio=True).first()
         stream.download(self.parent_dir)
@@ -37,6 +56,12 @@ class Download:
 
     def downloadMp4(self):
         '''mp4 파일로 다운로드하는 함수'''
+        '''
+        mp4 형식으로 비디오를 다운로드하는 함수입니다.
+        
+        Returns:
+            str: 다운로드한 mp4 파일의 이름.
+        '''
         audio = self.downloadMp3()   # mp3 파일 다운로드
         video = self.yt.streams.filter(adaptive=True, file_extension='mp4').first()  # 비디오 객체 가져오기
         print(video)
