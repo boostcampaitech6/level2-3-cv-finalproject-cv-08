@@ -65,15 +65,6 @@ frontend
 ┃ ┣ app.pcss
 ┃ ┗ hooks.js
 ┣ static
-┃ ┣ join
-┃ ┃ ┗ frame-60.svg
-┃ ┃    ...
-┃ ┣ logo
-┃ ┃ ┗ boostcampLogo.jpg
-┃ ┃    ...
-┃ ┗ resultlist
-┃   ┗ Frame_7.png
-┃      ...
 ┣ .gitignore
 ┣ .npmrc
 ┣ Dockerfile
