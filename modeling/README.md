@@ -23,7 +23,7 @@ modeling
 ┃ ┗ train.py
 ┣ SimSwap
 ┃ ┣ inference_swap.py
-┃ ┗ 
+┃ ┗ test_*_swap*.py
 ┣ cgan-gp
 ┃ ┣ inference.py
 ┃ ┗ train.py
@@ -55,16 +55,13 @@ modeling
 
 #### SimSwap
 
- - `inference_swap.py`: CLIPSeg 모델을 사용하여 텍스트 프롬프트를 기반으로 이미지 세분화를 수행하는 스크립트입니다. 이미지를 불러와 텍스트 프롬프트로 처리하고, 식별된 객체를 기반으로 세분화된 이미지를 생성합니다.
+ - `inference_swap.py` : face image와 target video를 입력받고, frames 별로 얼굴을 합성한 후 최종 video의 frames과 fps를 출력하는 코드입니다.
+ - ` test_*_swap*.py ` : 다양한 얼굴 합성을 수행합니다. 이미지/영상의 얼굴 하나에만, 이미지/영상의 모든 얼굴, 이미지/영상의 특정 얼굴 등 파일에 따라 target을 바꿀 수 있습니다.
 
 #### cgan-gp
 
  - `inference.py`: 주어진 비디오에서 얼굴을 감지하고, 감지된 얼굴에 대해 성별과 연령을 추정하여 화면에 표시하고, 일정한 간격으로 프레임을 캡처하여 이미지 파일로 저장하는 기능을 수행합니다.
  - `train.py`: 이미지 폴더에서 이미지들을 읽어와 각 이미지의 나이를 예측하고, 가장 흔한 나이 그룹을 세서 출력하고, 그 결과를 CSV 파일에 저장하는 작업을 수행합니다.
-  
-
-# Getting Started
-
 
 
 ## Getting Started
