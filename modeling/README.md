@@ -25,8 +25,13 @@ modeling
 ┃ ┣ inference_swap.py
 ┃ ┗ test_*_swap*.py
 ┣ cgan-gp
+┃ ┣ dataset.py
+┃ ┣ inference_options.py
 ┃ ┣ inference.py
-┃ ┗ train.py
+┃ ┣ model.py
+┃ ┣ train_options.py
+┃ ┣ train.py
+┃ ┗ utils.py
 ┣ README.md
 ┗ requirements.txt
 ```
@@ -35,7 +40,7 @@ modeling
 
 #### pytorch_template
 
- - `config`: 모델을 동작시킬 argumentation을 모두 포함하는 config 파일들을 모아 놓은 폴더입니다.
+ - `config`: 모델을 동작시킬 arguments를 모두 포함하는 config 파일들을 모아 놓은 폴더입니다.
  - `models`: model을 정의하고 build하는 코드들을 저장하는 폴더입니다.
  - `modules`: 모델을 학습시키는데 필요한 부가적인 파일들을 저장해 둔 폴더입니다. (dataloader, loss function, scaler, optimizer, metrics 등)
  - `predict.py` : 학습한 모델을 통해 inference를 실행시키는 코드입니다.
@@ -45,7 +50,7 @@ modeling
 
  - `datasets` : dataset을 build하는 코드들을 모아둔 폴더입니다.
  - `models` : voice encoder, embedding fuser, decoder, discriminator 등의 모델 전반적인 구조를 선언하고 build하는 파일들을 모아둔 폴더입니다.
- - `options` : 사용할 모델의 구조와 데이터 셋, 하이퍼파라미터 등의 argumentation들을 정리해 둔 config 파일들을 모아 놓은 폴더입니다.
+ - `options` : 사용할 모델의 구조와 데이터 셋, 하이퍼파라미터 등의 arguments를 정리해 둔 config 파일들을 모아 놓은 폴더입니다.
  - `scripts` : mel spectrogram 변환, fid score 계산, inception score 계산 등의 기능들을 모아둔 폴더입니다.
  - `utils` : loss, evalutation, metrics, training utils 등의 모델 학습과 평가지표를 구성한 파일들을 모아둔 폴더입니다.
  - `infer.py`: voice를 spectrogram으로 변환시켜 입력하였을 때 encoder_decoder 구조만으로 결과를 생성하도록 하는 코드입니다.
@@ -60,9 +65,13 @@ modeling
 
 #### cgan-gp
 
- - `inference.py`: 주어진 비디오에서 얼굴을 감지하고, 감지된 얼굴에 대해 성별과 연령을 추정하여 화면에 표시하고, 일정한 간격으로 프레임을 캡처하여 이미지 파일로 저장하는 기능을 수행합니다.
- - `train.py`: 이미지 폴더에서 이미지들을 읽어와 각 이미지의 나이를 예측하고, 가장 흔한 나이 그룹을 세서 출력하고, 그 결과를 CSV 파일에 저장하는 작업을 수행합니다.
-
+ - `dataset.py` : argument로 지정된 dataset을 불러오도록 선언해둔 코드입니다.
+ - `inference_options.py` : 학습된 모델에 inference를 위해 필요한 arguments를 parameter로 받는 코드입니다.
+ - `inference.py` : arguments를 통해 성별과 나이를 condition으로 주어 모델을 통해 64x64 face image를 생성하는 코드입니다.
+ - `model.py` : 모델을 (conditional GAN, Discriminator, convolutional block 등) 선언하여 build할 수 있도록 하는 코드입니다.
+ - `train_options.py` : 모델을 학습시킬 때 사용되는 arguments를 parameter로 받는 코드로, pre-train 혹은 finetuning을 진행할 수 있도록 제어할 수 있는 argument도 있습니다.
+ - `train.py` : arguments를 통해 모델을 선언하고 학습시키는 코드입니다.
+ - `utils.py` : Gradient Penalty Loss와 그 이외의 추가적인 optinal한 함수들을 모아둔 코드입니다.
 
 ## Getting Started
 
