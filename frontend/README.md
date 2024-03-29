@@ -1,4 +1,4 @@
-# 🔊 Voice2Face-Frontend
+# 🔊목소리로 가상 얼굴 생성 서비스 [너의 목소리가 보여]
 
   <img src="https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white">
 
