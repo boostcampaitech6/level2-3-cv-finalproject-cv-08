@@ -1,6 +1,4 @@
 
-  
-
 # 🔊 Voice2Face-Data
 
   
@@ -83,6 +81,7 @@ data
 
   
 ### Setting up Virtual Environments
+
 
   
 1. Initialize and update the server
