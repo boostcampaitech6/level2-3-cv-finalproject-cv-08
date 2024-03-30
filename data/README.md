@@ -82,7 +82,7 @@ data
 ## Getting Started
 
   
-### Setting up Vitual Enviornment
+### Setting up Virtual Enviornment
 
   
 1. Initialize and update the server
