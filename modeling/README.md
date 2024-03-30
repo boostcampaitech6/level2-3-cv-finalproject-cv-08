@@ -24,7 +24,7 @@ modeling
 ┣ SimSwap
 ┃ ┣ inference_swap.py
 ┃ ┗ test_*_swap*.py
-┣ cgan-gp
+┣ wcgan-gp
 ┃ ┣ dataset.py
 ┃ ┣ inference_options.py
 ┃ ┣ inference.py
@@ -63,7 +63,7 @@ modeling
  - `inference_swap.py` : face image와 target video를 입력받고, frames 별로 얼굴을 합성한 후 최종 video의 frames과 fps를 출력하는 코드입니다.
  - ` test_*_swap*.py ` : 다양한 얼굴 합성을 수행합니다. 이미지/영상의 얼굴 하나에만, 이미지/영상의 모든 얼굴, 이미지/영상의 특정 얼굴 등 파일에 따라 target을 바꿀 수 있습니다.
 
-#### cgan-gp
+#### wcgan-gp
 
  - `dataset.py` : argument로 지정된 dataset을 불러오도록 선언해둔 코드입니다.
  - `inference_options.py` : 학습된 모델에 inference를 위해 필요한 arguments를 parameter로 받는 코드입니다.
@@ -137,7 +137,7 @@ python sf2f/inference_swap.py --checkpoint_start_from CHEKPOINT_DIR/CHECKPOINT.p
 ```
 
 
-### CGAN-GP
+### WCGAN-GP
 Training script for pre-train and finetuning model that generates faces from condition(gender, age) :
 ```
 # train shell
@@ -161,11 +161,10 @@ python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkp
 ```
 
 ## References
-[Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
+- [Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
+- [Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
+- [Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
+- [Pytorch Template](https://github.com/victoresque/pytorch-template)
 
-[Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
-
-[Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
-
-[Pytorch Template](https://github.com/victoresque/pytorch-template)
-
+## Links
+- [Origin github](https://github.com/Make-Zenerator/voice2face-modeling.git)
