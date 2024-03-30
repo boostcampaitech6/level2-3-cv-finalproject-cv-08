@@ -128,7 +128,23 @@ To Install the necessary packages liksted in `requirements.txt`, run the followi
 pip install -r requirements.txt
 
 ```
+### SF2F
+[Prepare](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/sf2f/GETTING_STARTED.md#download-vggface2-resnet-checkpoint) \
+Inference for a service that generates faces from voices
+```
+python sf2f/inference_swap.py --checkpoint_start_from CHEKPOINT_DIR/CHECKPOINT.pt --input_wav_file WAV_DIR/VOICE.wav
+```
 
+
+### CGAN-GP
+
+### SimSwap
+[Prepare](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/SimSwap/docs/guidance/preparation.md) \
+[Inference for image or video face swapping](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/SimSwap/docs/guidance/usage.md) \
+Inference for a service that swaps only one face within the video :
+```
+python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkpoint.tar --pic_a_path ./demo_file/hj.png --video_path ./demo_file/tae_24fps.mp4
+```
   
 ## References
 [Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
