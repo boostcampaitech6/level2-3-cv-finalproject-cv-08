@@ -1,5 +1,6 @@
 # 🔊목소리로 가상 얼굴 생성 서비스 [너의 목소리가 보여]
 
+  <img  src="https://img.shields.io/badge/figma-_F24E1E?style=for-the-badge&logo=figma&logoColor=white">
   <img src="https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white">
 
 
@@ -149,3 +150,8 @@ To create a production build, use:
 npm run build
 ```
   
+## Links
+- [Wireframe](https://www.figma.com/file/MBWE1CthewJVCl0KH8xEcM/%5BV1%5D-%ED%99%94%EB%A9%B4-%EA%B5%AC%EC%84%B1?type=whiteboard&node-id=0:1&t=jPWmEIfP3RobQG6G-1)
+- [Prototyping](https://www.figma.com/file/fN6DWRmoszsytULLaZ4cni/Voice2Face-V1?type=design&node-id=1603:2&mode=design&t=jPWmEIfP3RobQG6G-1)
+- [Origin github](https://github.com/Make-Zenerator/voice2face-frontend.git)
+
