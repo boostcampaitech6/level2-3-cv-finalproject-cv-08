@@ -82,7 +82,7 @@ data
 ## Getting Started
 
   
-### Setting up Vitual Enviornment
+### Setting up Virtual Environments
 
   
 1. Initialize and update the server
@@ -97,7 +97,7 @@ source .bashrc
 
   
 
-2. Create and Activate a virtual environment in the project directory
+2. Create and Activate a virtual environments in the project directory
 
   
 
