@@ -1,0 +1,3 @@
+python sf2f/train.py --path_opt sf2f/options/vox/sf2f/sf2f_1st_stage.yaml --batch_size 512 --visualize_every 10 --epochs 12000 --eval_epochs 15 --workers 0 --resume sf2f_1st_stage-20240221-150348 --checkpoint_name checkpoint \
+
+python sf2f/train.py --path_opt sf2f/options/vox/sf2f/sf2f_fuser.yaml --batch_size 512 --visualize_every 10 --epochs 50 --eval_epochs 1 --eval_mode_after 100 --train_fuser_only True --pretrained_path output/{sf2f_1st_stage_experiment_pretrained_model}.pt --learning_rate 1e-4

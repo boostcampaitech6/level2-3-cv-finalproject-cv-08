@@ -1,0 +1,37 @@
+FROM pytorch/pytorch:2.2.1-cuda11.8-cudnn8-runtime
+
+ENV base_path /workspace
+COPY . ${base_path}
+
+RUN mkdir -p ${base_path}/insightface_func/models \
+${base_path}/parsing_model/checkpoint \
+${base_path}/arcface_model
+
+RUN apt update -y
+RUN apt install -y libgl1-mesa-glx \
+libglib2.0-0 \
+unzip
+
+ADD https://storage.makezenerator.com:9000/voice2face-public/model_resource/swimswap/79999_iter.pth ${base_path}/parsing_model/checkpoint
+
+ADD https://storage.makezenerator.com:9000/voice2face-public/model_resource/swimswap/antelope.zip ${base_path}/insightface_func/models
+
+RUN unzip ${base_path}/insightface_func/models/antelope.zip -d ${base_path}/insightface_func/models/
+
+
+RUN pip install imageio \
+imageio-ffmpeg \
+insightface==0.2.1 \
+onnxruntime \
+onnxruntime-gpu \
+mlflow \
+minio \
+boto3 \
+flask \
+flask_cors \
+gunicorn \
+python-dotenv
+
+
+# ENTRYPOINT gunicorn -w 1 -b 0.0.0.0:3001 app:app --reload --timeout 90
+# CMD [ "python", "inference.py" ]

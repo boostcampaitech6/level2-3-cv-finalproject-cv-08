@@ -1,0 +1,11 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+MLFLOW_S3_ENDPOINT_URL=os.getenv('MLFLOW_S3_ENDPOINT_URL')
+MLFLOW_TRACKING_URI=os.getenv('MLFLOW_TRACKING_URI')
+AWS_ACCESS_KEY=os.getenv('AWS_ACCESS_KEY')
+AWS_SECRET_ACCESS_KEY=os.getenv('AWS_SECRET_ACCESS_KEY')
+MINIO_BUCKET=os.getenv('MINIO_BUCKET')
+MINIO_ENDPOINT=os.getenv('MINIO_ENDPOINT')

@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  sf2f:
+    build:
+      context: ./sf2f/
+      dockerfile: Dockerfile.sf2f
+    container_name: sf2f-server
+    # ports:
+    #   - 3002:3002
+    env_file:
+      .env.serving
+    command: gunicorn -w 4 -b 0.0.0.0:3002 app:app --reload --timeout 2000
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+    # networks:
+    #   - inference
+    network_mode: "host"
+  swimswap:
+    build:
+      context: ./SwimSwap/
+      dockerfile: Dockerfile.swimswap
+    container_name: swimswap-server
+    # ports:
+    #   - 3001:3001
+    env_file:
+      .env.serving
+    command: gunicorn -w 4 -b 0.0.0.0:3001 app:app --timeout 2700
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+    network_mode: "host"
+#     networks:
+#       - inference
+# networks:
+#   inference:
+#     driver: host
