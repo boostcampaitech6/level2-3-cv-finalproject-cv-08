@@ -161,14 +161,10 @@ python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkp
 ```
 
 ## References
-[Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
-
-[Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
-
-[Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
-
-[Pytorch Template](https://github.com/victoresque/pytorch-template)
-
+- [Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
+- [Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
+- [Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
+- [Pytorch Template](https://github.com/victoresque/pytorch-template)
 
 ## Links
 - [Origin github](https://github.com/Make-Zenerator/voice2face-modeling.git)
