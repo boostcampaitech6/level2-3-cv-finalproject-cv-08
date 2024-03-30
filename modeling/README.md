@@ -151,7 +151,7 @@ python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkp
 
 [Conditional GAN](https://arxiv.org/pdf/1411.1784.pdf)
 
-[Sim Swap](https://github.com/neuralchen/SimSwap)
+[Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
 
 [Pytorch Template](https://github.com/victoresque/pytorch-template)
   
