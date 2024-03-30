@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> main
 # 🔊 Voice2Face-Data
 
   
@@ -79,7 +84,7 @@ data
 
 ## Getting Started
 
-  
+
 ### Setting up Virtual Environments
 
 
@@ -96,7 +101,11 @@ source .bashrc
 
   
 
+<<<<<<< HEAD
 2. Create and Activate a virtual environments in the project directory
+=======
+2. Create and Activate a virtual environment in the project directory
+>>>>>>> main
 
   
 
@@ -134,7 +143,11 @@ pip install -r requirements.txt
 
 ```
 
+<<<<<<< HEAD
   
   
 ## Links
 - [Origin github](https://github.com/Make-Zenerator/voice2face-data.git)
+=======
+  
+>>>>>>> main
