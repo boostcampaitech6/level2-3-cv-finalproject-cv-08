@@ -137,6 +137,18 @@ python sf2f/inference_swap.py --checkpoint_start_from CHEKPOINT_DIR/CHECKPOINT.p
 
 
 ### CGAN-GP
+Training script for pre-train and finetuning model that generates faces from condition(gender, age)
+```
+# train shell
+python wcgan-gp/main.py --gpu_ids 0 --use_gpu True --mode {train/finetune/inference} --train_continue {on/off} --checkpoint_path {./checkpoint} --checkpoint_name {epoch1.pth} --checkpoint_fine_tune_name {fine_tune/epoch1.pth} --dataset_path /workspace/data --dataset_name celeba --dataset_fine_tune_name VoxCeleb --output_path ./results --num_epoch 100 --num_freq_save 5 --batch_size 128 --lr_G 2e-4 --lr_D 2e-4 --lr_policy {linear/step/plateau/cosine} --lr_G_weight_decay 1e-5 --lr_D_weight_decay 1e-5 --nch_ker 64 --fine_tune True --fine_tune_nume_epoch 100 --fine_tune_num_freq_save 5
+```
+
+Inference for a service that generates faces from condition(gender, age)
+```
+# inference shell
+# python wcgan/main.py --mode {inference} --fine_tune {True, HQ-VoxCeleb dataset에 fine tune 진행여부} --output_path {inference 결과 저장 위치} --checkpoint_name {경로/checkpoint를 불러올 주소와 이름} --input_gendere {m/man/male/f/female/woman} --input_age {0 - 100}
+```
+
 
 ### SimSwap
 [Prepare](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/SimSwap/docs/guidance/preparation.md) \
