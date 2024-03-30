@@ -159,7 +159,7 @@ Inference for a service that swaps only one face within the video :
 ```
 python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkpoint.tar --pic_a_path ./demo_file/hj.png --video_path ./demo_file/tae_24fps.mp4
 ```
-  
+
 ## References
 [Speech Fusion to Face](https://arxiv.org/pdf/2006.05888.pdf) 
 
@@ -168,5 +168,4 @@ python SimSwap/inference_swap.py --Arc_path SimSwap/arcface_model/arcface_checkp
 [Sim Swap](https://arxiv.org/pdf/2106.06340v1.pdf)
 
 [Pytorch Template](https://github.com/victoresque/pytorch-template)
-  
 
