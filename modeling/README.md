@@ -130,6 +130,7 @@ pip install -r requirements.txt
 ```
 ### SF2F
 [Prepare](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/sf2f/GETTING_STARTED.md#download-vggface2-resnet-checkpoint) \
+[Training](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/sf2f/GETTING_STARTED.md#launch-training) \
 Inference for a service that generates faces from voices :
 ```
 python sf2f/inference_swap.py --checkpoint_start_from CHEKPOINT_DIR/CHECKPOINT.pt --input_wav_file WAV_DIR/VOICE.wav
@@ -152,6 +153,7 @@ python wcgan/main.py --mode {inference} --fine_tune {True, HQ-VoxCeleb datasetì—
 
 ### SimSwap
 [Prepare](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/SimSwap/docs/guidance/preparation.md) \
+[Training](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/tree/feat/modeling/modeling/SimSwap#training) \
 [Inference for image or video face swapping](https://github.com/boostcampaitech6/level2-3-cv-finalproject-cv-08/blob/feat/modeling/modeling/SimSwap/docs/guidance/usage.md) \
 Inference for a service that swaps only one face within the video :
 ```
