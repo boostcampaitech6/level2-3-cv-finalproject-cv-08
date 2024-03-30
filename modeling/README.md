@@ -146,7 +146,7 @@ python wcgan-gp/main.py --gpu_ids 0 --use_gpu True --mode {train/finetune/infere
 Inference for a service that generates faces from condition(gender, age) :
 ```
 # inference shell
-# python wcgan/main.py --mode {inference} --fine_tune {True, HQ-VoxCeleb dataset에 fine tune 진행여부} --output_path {inference 결과 저장 위치} --checkpoint_name {경로/checkpoint를 불러올 주소와 이름} --input_gendere {m/man/male/f/female/woman} --input_age {0 - 100}
+python wcgan/main.py --mode {inference} --fine_tune {True, HQ-VoxCeleb dataset에 fine tune 진행여부} --output_path {inference 결과 저장 위치} --checkpoint_name {경로/checkpoint를 불러올 주소와 이름} --input_gendere {m/man/male/f/female/woman} --input_age {0 - 100}
 ```
 
 
