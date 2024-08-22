@@ -1,0 +1,11 @@
+__pycache__
+
+migrations
+
+.env
+.env.dev
+.env.prod
+data/
+*.conf
+.sh
+certbot/

@@ -1,0 +1,15 @@
+flask
+flask_cors
+glog
+python_speech_features 
+webrtcvad 
+pydub 
+imageio 
+insightface==0.2.1 
+onnxruntime 
+moviepy 
+onnxruntime-gpu 
+mlflow 
+minio 
+boto3
+gunicorn

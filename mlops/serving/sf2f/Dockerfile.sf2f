@@ -1,0 +1,23 @@
+FROM pytorch/pytorch:2.2.1-cuda11.8-cudnn8-runtime
+
+ENV base_path /workspace/
+COPY . ${base_path}
+
+RUN apt update -y
+RUN apt install -y gcc
+
+RUN pip install glog \
+python_speech_features \
+webrtcvad \
+pydub \
+mlflow \
+minio \
+boto3 \
+flask \
+flask_cors \
+gunicorn \
+python-dotenv
+
+EXPOSE 3002
+
+# CMD [ "python", "inference.py" ]
